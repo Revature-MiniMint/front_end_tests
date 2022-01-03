@@ -222,6 +222,10 @@
       ],
       "value": "You have successfully registered! You will be automatically redirected to log in."
     }]
+  }, {
+    "id": "2846dde9-0510-438a-9aef-13cdc4fd410e",
+    "name": "LOGIN",
+    "commands": []
   }],
   "suites": [{
     "id": "112ba997-fe11-470e-ab83-254530a6d0b4",
@@ -229,7 +233,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["fef44b0f-ffa7-4e20-9781-193d3c60d177", "20639efb-9f17-4a7e-aec8-bf4f7edd797a"]
+    "tests": ["fef44b0f-ffa7-4e20-9781-193d3c60d177", "20639efb-9f17-4a7e-aec8-bf4f7edd797a", "2846dde9-0510-438a-9aef-13cdc4fd410e"]
   }],
   "urls": ["http://localhost:3000/"],
   "plugins": []
