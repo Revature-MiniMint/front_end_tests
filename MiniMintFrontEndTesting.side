@@ -108,6 +108,119 @@
         ["xpath=//div[3]/div/div/div/div", "xpath:position"]
       ],
       "value": "Registration Form"
+    }, {
+      "id": "84b8f2a9-1ba7-4d5f-877d-77f84d9befd9",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4dd61ee8-b8fb-4889-a225-fb2ce5bd2868",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "ee7bb0d0-aa14-4079-a323-2227cbfa84b3",
+      "comment": "",
+      "command": "click",
+      "target": "name=userEmail",
+      "targets": [
+        ["name=userEmail", "name"],
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='userEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ade58c6-e242-4557-82de-934f61e20413",
+      "comment": "",
+      "command": "type",
+      "target": "name=userEmail",
+      "targets": [
+        ["name=userEmail", "name"],
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='userEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "test@mail.com"
+    }, {
+      "id": "b05927ca-3905-4e71-a4ed-cadae6828ed1",
+      "comment": "",
+      "command": "click",
+      "target": "name=userPassword",
+      "targets": [
+        ["name=userPassword", "name"],
+        ["css=.mb-3:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='userPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "809bd0b8-d8e4-4329-8f3a-52f795620b0e",
+      "comment": "",
+      "command": "type",
+      "target": "name=userPassword",
+      "targets": [
+        ["name=userPassword", "name"],
+        ["css=.mb-3:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='userPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "testpass"
+    }, {
+      "id": "2c8fdd20-c821-4293-b83e-d04c362bc0ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5316fce8-6d2e-4b0f-8ef0-679d3741cb91",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.fade",
+      "targets": [
+        ["css=.fade", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/form/div[4]/div", "xpath:idRelative"],
+        ["xpath=//form/div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ebb78da-4249-4ae6-be0f-c7941744ad08",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.fade",
+      "targets": [
+        ["css=.fade", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/form/div[4]/div", "xpath:idRelative"],
+        ["xpath=//form/div[4]/div", "xpath:position"]
+      ],
+      "value": "You have successfully registered! You will be automatically redirected to log in."
     }]
   }],
   "suites": [{
