@@ -13,6 +13,7 @@ We wanted to include at least some white-box tests for our project 3 so we decid
 * Open the browser of your choice (whichever you chose to install Selenium onto), and then open the Selenium extension.
 * Click on the "Open Project" button or press [Ctrl + O] and open the .side file in this repository.
 * Click on the "Run All Tests" button, or press [Ctrl + Shift + R]
+* NOTE: some tests may require empty databases to run successfully (i.e. you cannot register the same user twice). 
 
 ## Technologies
 * Selenium IDE
