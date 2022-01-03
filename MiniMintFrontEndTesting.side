@@ -86,15 +86,37 @@
         ["xpath=//button[contains(.,'Create an Account')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "61f2b876-fb93-4c7d-95dc-4d6fe121c296",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card",
+      "targets": [
+        ["css=.card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51bbb441-aa28-449a-a152-3d0957023e8e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.card-title",
+      "targets": [
+        ["css=.card-title", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Registration Form"
     }]
   }],
   "suites": [{
     "id": "112ba997-fe11-470e-ab83-254530a6d0b4",
-    "name": "Default Suite",
+    "name": "Main Suite",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["fef44b0f-ffa7-4e20-9781-193d3c60d177"]
+    "tests": ["fef44b0f-ffa7-4e20-9781-193d3c60d177", "20639efb-9f17-4a7e-aec8-bf4f7edd797a"]
   }],
   "urls": ["http://localhost:3000/"],
   "plugins": []
