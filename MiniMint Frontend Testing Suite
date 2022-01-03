@@ -1,0 +1,71 @@
+{
+  "id": "c60e02e7-12d9-4ed9-8ac2-213a443d81d6",
+  "version": "2.0",
+  "name": "MiniMint Frontend Test",
+  "url": "http://localhost:3000/",
+  "tests": [{
+    "id": "fef44b0f-ffa7-4e20-9781-193d3c60d177",
+    "name": "HOME",
+    "commands": [{
+      "id": "d25e9e27-a9c5-475d-9c83-71f302130c45",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "527586ec-84f4-43d3-8952-c44c1bee9b40",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8046fef1-709e-415c-bd41-07890677e785",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=MiniMint",
+      "targets": [
+        ["linkText=MiniMint", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//div[@id='root']/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#home')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,' MiniMint')]", "xpath:innerText"]
+      ],
+      "value": "MiniMint"
+    }, {
+      "id": "a2ff1a19-fd3a-4029-8c11-53353a002471",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.form",
+      "targets": [
+        ["css=.form", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d176a378-d35c-4874-8122-fb21c7f73214",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.border-bottom",
+      "targets": [
+        ["css=.border-bottom", "css:finder"],
+        ["xpath=//div[@id='root']/div/nav", "xpath:idRelative"],
+        ["xpath=//nav", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "112ba997-fe11-470e-ab83-254530a6d0b4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fef44b0f-ffa7-4e20-9781-193d3c60d177"]
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}
