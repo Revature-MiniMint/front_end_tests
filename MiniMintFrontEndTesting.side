@@ -57,6 +57,36 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "20639efb-9f17-4a7e-aec8-bf4f7edd797a",
+    "name": "REGISTER",
+    "commands": [{
+      "id": "beb76aa2-6b37-479e-9f7f-5e12f4ff2e89",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1bdeafc1-bb9c-4d60-b957-847e8b6b60cb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a47e98b5-c875-4673-a275-53258f4b589a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-register",
+      "targets": [
+        ["css=.btn-register", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create an Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "112ba997-fe11-470e-ab83-254530a6d0b4",
