@@ -34,28 +34,6 @@
         ["xpath=//a[contains(.,' MiniMint')]", "xpath:innerText"]
       ],
       "value": "MiniMint"
-    }, {
-      "id": "a2ff1a19-fd3a-4029-8c11-53353a002471",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "css=.form",
-      "targets": [
-        ["css=.form", "css:finder"],
-        ["xpath=//div[@id='root']/div/div/div/div[2]/form", "xpath:idRelative"],
-        ["xpath=//form", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "d176a378-d35c-4874-8122-fb21c7f73214",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "css=.border-bottom",
-      "targets": [
-        ["css=.border-bottom", "css:finder"],
-        ["xpath=//div[@id='root']/div/nav", "xpath:idRelative"],
-        ["xpath=//nav", "xpath:position"]
-      ],
-      "value": ""
     }]
   }, {
     "id": "20639efb-9f17-4a7e-aec8-bf4f7edd797a",
@@ -78,11 +56,12 @@
       "id": "a47e98b5-c875-4673-a275-53258f4b589a",
       "comment": "",
       "command": "click",
-      "target": "css=.btn-register",
+      "target": "css=.btn-regis",
       "targets": [
-        ["css=.btn-register", "css:finder"],
-        ["xpath=//div[@id='root']/div/div/div/div[2]/form/button", "xpath:idRelative"],
-        ["xpath=//form/button", "xpath:position"],
+        ["css=.btn-regis", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/section/div/div/div[2]/form/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
         ["xpath=//button[contains(.,'Create an Account')]", "xpath:innerText"]
       ],
       "value": ""
@@ -104,10 +83,10 @@
       "target": "css=.card-title",
       "targets": [
         ["css=.card-title", "css:finder"],
-        ["xpath=//div[@id='root']/div/div/div/div", "xpath:idRelative"],
-        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
       ],
-      "value": "Registration Form"
+      "value": "Register"
     }, {
       "id": "84b8f2a9-1ba7-4d5f-877d-77f84d9befd9",
       "comment": "",
@@ -190,35 +169,35 @@
       "id": "2c8fdd20-c821-4293-b83e-d04c362bc0ba",
       "comment": "",
       "command": "click",
-      "target": "css=.btn:nth-child(5)",
+      "target": "css=.btn",
       "targets": [
-        ["css=.btn:nth-child(5)", "css:finder"],
+        ["css=.btn", "css:finder"],
         ["xpath=//button[@type='submit']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/div/div/div[2]/form/button", "xpath:idRelative"],
-        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[2]/form/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
         ["xpath=//button[contains(.,'Register')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "5316fce8-6d2e-4b0f-8ef0-679d3741cb91",
+      "id": "365a5568-e587-4cb8-85ce-75a745c7e16d",
       "comment": "",
-      "command": "assertElementPresent",
+      "command": "waitForElementPresent",
       "target": "css=.fade",
       "targets": [
         ["css=.fade", "css:finder"],
-        ["xpath=//div[@id='root']/div/div/div/div[2]/form/div[4]/div", "xpath:idRelative"],
-        ["xpath=//form/div[4]/div", "xpath:position"]
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[2]/form/div[4]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div", "xpath:position"]
       ],
-      "value": ""
+      "value": "30000"
     }, {
-      "id": "5ebb78da-4249-4ae6-be0f-c7941744ad08",
+      "id": "6a290a52-1081-4b42-91a2-cc3df674b6b9",
       "comment": "",
       "command": "assertText",
       "target": "css=.fade",
       "targets": [
         ["css=.fade", "css:finder"],
-        ["xpath=//div[@id='root']/div/div/div/div[2]/form/div[4]/div", "xpath:idRelative"],
-        ["xpath=//form/div[4]/div", "xpath:position"]
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[2]/form/div[4]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div", "xpath:position"]
       ],
       "value": "You have successfully registered! You will be automatically redirected to log in."
     }]
