@@ -21,19 +21,16 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "8046fef1-709e-415c-bd41-07890677e785",
+      "id": "6a5e63ee-cb4e-45fc-b624-33025c1c29a5",
       "comment": "",
-      "command": "assertText",
-      "target": "linkText=MiniMint",
+      "command": "assertElementPresent",
+      "target": "css=.login-form",
       "targets": [
-        ["linkText=MiniMint", "linkText"],
-        ["css=.navbar-brand", "css:finder"],
-        ["xpath=//div[@id='root']/div/nav/div/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '#home')]", "xpath:href"],
-        ["xpath=//a", "xpath:position"],
-        ["xpath=//a[contains(.,' MiniMint')]", "xpath:innerText"]
+        ["css=.login-form", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/section/div/div/div[2]/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
       ],
-      "value": "MiniMint"
+      "value": ""
     }]
   }, {
     "id": "20639efb-9f17-4a7e-aec8-bf4f7edd797a",
@@ -199,7 +196,7 @@
         ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div[2]/form/div[4]/div", "xpath:idRelative"],
         ["xpath=//div[4]/div", "xpath:position"]
       ],
-      "value": "You have successfully registered! You will be automatically redirected to log in."
+      "value": "You have successfully registered! You may now log in."
     }]
   }, {
     "id": "2846dde9-0510-438a-9aef-13cdc4fd410e",
@@ -284,75 +281,16 @@
       ],
       "value": ""
     }, {
-      "id": "727bd291-413b-4b8d-9009-062bcd8f6ce5",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "css=.col-3 > div",
-      "targets": [
-        ["css=.col-3 > div", "css:finder"],
-        ["xpath=//div[@id='root']/div/div/div[2]/div", "xpath:idRelative"],
-        ["xpath=//div[2]/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "bfe707c7-24f9-4d6e-a6d7-9b623db04095",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.list-group-item:nth-child(1)",
-      "targets": [
-        ["css=.list-group-item:nth-child(1)", "css:finder"],
-        ["xpath=//div[@id='root']/div/div/div[2]/div/div/ul/li", "xpath:idRelative"],
-        ["xpath=//li", "xpath:position"],
-        ["xpath=//li[contains(.,'Profile Picture')]", "xpath:innerText"]
-      ],
-      "value": "Profile Picture"
-    }, {
-      "id": "7e7aa678-019c-47dc-9693-8bd359d7b5ff",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.list-group-item:nth-child(2)",
-      "targets": [
-        ["css=.list-group-item:nth-child(2)", "css:finder"],
-        ["xpath=//div[@id='root']/div/div/div[2]/div/div/ul/li[2]", "xpath:idRelative"],
-        ["xpath=//li[2]", "xpath:position"],
-        ["xpath=//li[contains(.,'Profile Information')]", "xpath:innerText"]
-      ],
-      "value": "Profile Information"
-    }, {
-      "id": "11e5d7dc-3967-4d09-8c6d-66c8f595f959",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.list-group-item:nth-child(3)",
-      "targets": [
-        ["css=.list-group-item:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='root']/div/div/div[2]/div/div/ul/li[3]", "xpath:idRelative"],
-        ["xpath=//li[3]", "xpath:position"],
-        ["xpath=//li[contains(.,'Privacy')]", "xpath:innerText"]
-      ],
-      "value": "Privacy"
-    }, {
       "id": "7ba49c28-f391-4e27-8646-f78cd9ac2c92",
       "comment": "",
       "command": "assertElementPresent",
-      "target": "css=.update-form",
+      "target": "css=.profile",
       "targets": [
-        ["css=.update-form", "css:finder"],
-        ["xpath=//div[@id='root']/div/div/div[3]/div/div/div", "xpath:idRelative"],
-        ["xpath=//div/div[3]/div/div/div", "xpath:position"]
+        ["css=.profile", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
       ],
       "value": ""
-    }, {
-      "id": "cc25c892-05de-46ad-bbdd-677e69c293bf",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=h4",
-      "targets": [
-        ["css=h4", "css:finder"],
-        ["xpath=//div[@id='root']/div/div/div[3]/div/div/div/h4", "xpath:idRelative"],
-        ["xpath=//h4", "xpath:position"],
-        ["xpath=//h4[contains(.,'Update Form')]", "xpath:innerText"]
-      ],
-      "value": "Update Form"
     }, {
       "id": "332ca379-4a2a-4593-9fc6-068e6292d33c",
       "comment": "",
@@ -625,23 +563,22 @@
       "id": "29c34e2b-a7fe-4c0b-80f4-eea169542014",
       "comment": "",
       "command": "assertElementPresent",
-      "target": "css=.privacy-form",
+      "target": "css=.short-content",
       "targets": [
-        ["css=.privacy-form", "css:finder"],
-        ["xpath=//div[@id='root']/div/div/div[3]/div/div/div", "xpath:idRelative"],
-        ["xpath=//div/div[3]/div/div/div", "xpath:position"]
+        ["css=.short-content", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[3]/div", "xpath:idRelative"],
+        ["xpath=//div/div[3]/div", "xpath:position"]
       ],
       "value": ""
     }, {
       "id": "4418f548-5320-40be-b0cf-be3aa5fe7130",
       "comment": "",
-      "command": "assertText",
-      "target": "css=h4",
+      "command": "assertElementPresent",
+      "target": "css=.card",
       "targets": [
-        ["css=h4", "css:finder"],
-        ["xpath=//div[@id='root']/div/div/div[3]/div/div/div/h4", "xpath:idRelative"],
-        ["xpath=//h4", "xpath:position"],
-        ["xpath=//h4[contains(.,'Privacy Form')]", "xpath:innerText"]
+        ["css=.card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
       ],
       "value": "Privacy Form"
     }]
